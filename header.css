@@ -1,0 +1,88 @@
+﻿/*
+    /////////////////////////////////////////////////////////////////////
+// header.css - Css style for html                                 //
+// ver 1.0                                                          //
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
+// Language:    C++, Visual Studio 2015                            //
+// Platform:    Platform:      HP EliteBook, Windows 10            //
+// Application: Project #3, CSE687 - Object Oriented Design, S2017 //
+//  Author:        Manish Gupta, Syracuse University               //
+//                 (315) 412-8140, magupta@syr.edu                 //
+/////////////////////////////////////////////////////////////////////
+/*
+/*
+* Package Operations:
+* -------------------
+* contains css style for body and javascript toggle
+
+* Maintenance History:
+*---------------------
+*ver 1.0 : 05 Apr 2017
+* - first release
+*/
+
+
+
+ body {
+      margin: 20px;
+      color: black;
+      background-color: #eee;
+      font-family: Consolas;
+      font-weight: 600;
+      font-size: 110%;
+    }
+
+    .indent {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    h4 {
+      margin-bottom: 3px;
+      margin-top: 3px;
+    }
+
+   button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 2%;
+    border: full;
+    text-align: left;
+    outline: none;
+    font-size: 110%;
+    transition: 0.2s;
+      color: black;
+      font-family: Consolas;
+      font-weight: 600;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    width: 0%;
+    margin-left: 5px;
+
+
+      
+}
+
+button.accordion.active:after {
+    content: "\2212";
+width: 0%;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+    margin: 20px;
+    color: black;
+    display:block;
+}
